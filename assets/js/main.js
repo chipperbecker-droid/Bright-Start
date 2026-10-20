@@ -71,6 +71,14 @@
       : DAYS[a.getDay()] + ', ' + MONTHS_LONG[a.getMonth()] + ' ' + a.getDate();
   });
 
+  // Photos: a box with data-photo shows that image as soon as the file exists.
+  document.querySelectorAll('.ph[data-photo]').forEach(function (el) {
+    var src = el.getAttribute('data-photo');
+    var img = new Image();
+    img.onload = function () { el.style.backgroundImage = 'url("' + src + '")'; el.classList.add('has-photo'); };
+    img.src = src;
+  });
+
   /* ---------- 2. Menu ---------- */
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('site-nav');

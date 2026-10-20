@@ -268,3 +268,5 @@ tr.total td { font-weight: 900; font-size: 19px; color: var(--blue-dark); }
   .nav-sub a span { font-size: 14px; }
 }
 .page-hero .ph { min-height: 300px; }
+.ph.has-photo { background-size: cover; background-position: center; color: transparent; }
+.ph.has-photo::before { display: none; }

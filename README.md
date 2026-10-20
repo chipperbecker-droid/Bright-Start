@@ -39,7 +39,7 @@ Plain HTML, CSS and a little JavaScript. There's no framework and no build step.
 1. **Jotform application**: in `apply.html`, replace everything between `<!-- JOTFORM-START -->` and `<!-- JOTFORM-END -->` with the embed code from Jotform (Publish > Embed > iFrame). Until then the page tells people to call or email to apply.
 2. **CPR booking**: in `cpr.html`, replace the block between `SCHEDULING-START` and `SCHEDULING-END` with the Squarespace Scheduling (Acuity) embed.
 3. **Forms** (contact, CNA waitlist, group CPR request): each `<form>` has `data-endpoint=""`. Put a Formspree or Jotform form URL there to receive submissions. Until you do, the form says it isn't connected yet and offers a ready-made email instead, so no message gets lost silently.
-4. **Photos**: every teal box marked "Photo: ..." is a placeholder. Swap each `<div class="ph ...">` for `<img src="assets/img/your-photo.jpg" alt="what the photo shows">`.
+4. **Photos**: five boxes fill themselves once a photo with the right name is in `assets/img/`: `photo-home-hero.jpg`, `photo-hha-card.jpg`, `photo-cpr-card.jpg`, `photo-hha-hero.jpg`, `photo-cpr-hero.jpg` (free stock from Unsplash or Pexels works until there are real ones). The headshots and About page photos stay placeholders until there are real photos; swap those `<div class="ph ...">` boxes for `<img src="assets/img/your-photo.jpg" alt="what the photo shows">`.
 5. **Text in [brackets]**: the details only George can give you are highlighted in yellow on the page:
    - CPR courses: length, price, AHA or Red Cross, how long cards are valid (`cpr.html`)
    - Office hours (`contact.html`)
