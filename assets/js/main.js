@@ -49,7 +49,7 @@
     el.innerHTML = upcoming.slice(0, limit).map(function (c) {
       var a = parse(c.start), b = parse(c.end);
       var yrs = a.getFullYear() === b.getFullYear() ? a.getFullYear() : a.getFullYear() + ' to ' + b.getFullYear();
-      return '<li><strong>' + short(a) + ' to ' + short(b) + '</strong><span>' + yrs + ', starts ' + DAYS[a.getDay()] + '</span></li>';
+      return '<li><strong>' + short(a) + ' to ' + short(b) + '</strong><span>' + yrs + '</span></li>';
     }).join('');
   });
 
