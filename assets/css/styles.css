@@ -270,6 +270,9 @@ tr.total td { font-weight: 900; font-size: 19px; color: var(--blue-dark); }
 .page-hero .ph { min-height: 300px; }
 .ph.has-photo { background-size: cover; background-position: center; color: transparent; }
 .ph.has-photo::before { display: none; }
+.ph-logo { display: none; width: 240px; height: 96px; padding: 0; background-color: transparent; background-size: contain !important; background-repeat: no-repeat; background-position: left center !important; }
+.ph-logo.has-photo { display: block; }
+.page-hero .ph-logo { min-height: 0; }
 .dates-all { grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); }
 .dates-all li { padding: 18px 20px 18px 0; }
 .dates-all strong { font-size: 20px; white-space: nowrap; }
